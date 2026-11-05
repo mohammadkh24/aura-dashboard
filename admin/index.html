@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>AURA — Agent Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#">
+          <span class="brand-symbol"
+            ><span></span><span></span><span></span
+          ></span>
+          <span class="brand-copy">
+            <strong>AURA<span>.</span></strong>
+            <small>AGENT STUDIO</small>
+          </span>
+        </a>
+
+        <div class="workspace">
+          <span class="workspace-icon">✳</span>
+          <div>
+            <strong>فروشگاه من</strong>
+            <small>فضای کاری اصلی</small>
+          </div>
+          <span class="workspace-chevron">⌄</span>
+        </div>
+
+        <div class="nav-label">WORKSPACE</div>
+        <nav class="navigation">
+          <button class="nav-item active" data-view="overview">
+            <span class="nav-icon">◫</span>
+            <span>نمای کلی</span>
+            <span class="nav-shortcut">01</span>
+          </button>
+          <button class="nav-item" data-view="playground">
+            <span class="nav-icon">✳</span>
+            <span>آزمایشگاه ایجنت</span>
+            <span class="nav-shortcut">02</span>
+          </button>
+          <button class="nav-item" data-view="conversations">
+            <span class="nav-icon">▤</span>
+            <span>مکالمات</span>
+            <span class="nav-shortcut">03</span>
+          </button>
+        </nav>
+
+        <div class="nav-label">KNOWLEDGE & DATA</div>
+        <nav class="navigation">
+          <button class="nav-item" data-view="knowledge">
+            <span class="nav-icon">◇</span>
+            <span>حافظه و دانش</span>
+            <span class="nav-shortcut">04</span>
+          </button>
+          <button class="nav-item" data-view="products">
+            <span class="nav-icon">▦</span>
+            <span>محصولات</span>
+            <span class="nav-shortcut">05</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="agent-mini">
+            <div class="agent-mini-top">
+              <span class="live-dot"></span>
+              <span>AURA CORE</span>
+              <span class="online-label">ONLINE</span>
+            </div>
+            <div class="agent-orbit">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="orbit-center">✳</div>
+            </div>
+            <p>ایجنت آماده پاسخ‌گویی است.</p>
+          </div>
+          <div class="sidebar-footer">
+            <span class="avatar">M</span>
+            <div>
+              <strong>مدیر فروشگاه</strong>
+              <small>Workspace owner</small>
+            </div>
+            <span class="more">···</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="topbar-right">
+            <button class="mobile-menu" id="mobileMenu" aria-label="منو">
+              ☰
+            </button>
+            <div class="breadcrumb">
+              AURA <span>/</span> <strong id="breadcrumbTitle">نمای کلی</strong>
+            </div>
+          </div>
+          <div class="topbar-left">
+            <div class="system-status">
+              <span class="live-dot"></span> سیستم فعال
+            </div>
+            <span class="topbar-divider"></span>
+            <button class="icon-button" id="refreshButton" title="تازه‌سازی">
+              ↻
+            </button>
+            <div class="top-avatar">M</div>
+          </div>
+        </header>
+
+        <div class="page-container">
+          <!-- OVERVIEW -->
+          <section class="view active" id="view-overview">
+            <div class="hero-heading">
+              <div>
+                <div class="eyebrow">
+                  <span class="eyebrow-line"></span> YOUR AI WORKSPACE
+                </div>
+                <h1>سلام، خوش اومدی<span class="heading-dot">.</span></h1>
+                <p>اینجا مرکز کنترل و نظارت بر عملکرد ایجنت هوشمند توئه.</p>
+              </div>
+              <button class="primary-button" data-navigate="playground">
+                <span>✳</span> صحبت با AURA <span class="button-arrow">←</span>
+              </button>
+            </div>
+
+            <div class="overview-grid">
+              <div class="main-feature">
+                <div class="feature-top">
+                  <div>
+                    <span class="feature-kicker">AGENT STATUS</span>
+                    <h2>همه‌چیز تحت کنترله.</h2>
+                    <p>هسته هوشمند AURA آماده دریافت درخواست‌های مشتریانه.</p>
+                  </div>
+                  <div class="feature-badge">
+                    <span class="live-dot"></span> OPERATIONAL
+                  </div>
+                </div>
+                <div class="feature-visual">
+                  <div class="visual-grid"></div>
+                  <div class="visual-glow"></div>
+                  <div class="visual-orbit orbit-a"></div>
+                  <div class="visual-orbit orbit-b"></div>
+                  <div class="visual-orbit orbit-c"></div>
+                  <div class="visual-core">
+                    <span>✳</span>
+                    <small>AURA</small>
+                  </div>
+                  <div class="floating-chip chip-one">
+                    <span class="chip-dot"></span> AI ENGINE
+                  </div>
+                  <div class="floating-chip chip-two">TOOLS CONNECTED ↗</div>
+                  <div class="floating-chip chip-three">KNOWLEDGE BASE</div>
+                </div>
+                <div class="feature-bottom">
+                  <span><i class="live-dot"></i> هسته ایجنت فعال است</span>
+                  <button data-navigate="playground">
+                    باز کردن محیط آزمایش <b>←</b>
+                  </button>
+                </div>
+              </div>
+
+              <div class="stats-column">
+                <article class="stat-card stat-dark">
+                  <div class="stat-card-top">
+                    <span>مکالمات ثبت‌شده</span>
+                    <span class="stat-icon">▤</span>
+                  </div>
+                  <strong class="stat-number" id="statConversations">—</strong>
+                  <div class="stat-bottom">
+                    <span>کل مکالمات ذخیره‌شده</span
+                    ><span class="stat-trend">↗</span>
+                  </div>
+                  <div class="stat-decoration"></div>
+                </article>
+                <article class="stat-card">
+                  <div class="stat-card-top">
+                    <span>دانش فعال</span>
+                    <span class="stat-icon purple">◇</span>
+                  </div>
+                  <strong class="stat-number" id="statKnowledge">—</strong>
+                  <div class="stat-bottom">
+                    <span>محتوای قابل استفاده برای ایجنت</span
+                    ><span class="stat-trend purple-text">✳</span>
+                  </div>
+                </article>
+                <article class="stat-card">
+                  <div class="stat-card-top">
+                    <span>محصولات فعال</span>
+                    <span class="stat-icon orange">▦</span>
+                  </div>
+                  <strong class="stat-number" id="statProducts">—</strong>
+                  <div class="stat-bottom">
+                    <span>محصولات موجود در کاتالوگ</span
+                    ><span class="stat-trend orange-text">↗</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">QUICK ACCESS</span>
+                <h2>از کجا شروع کنیم؟</h2>
+              </div>
+              <span class="section-note">فضای کاری AURA</span>
+            </div>
+
+            <div class="quick-grid">
+              <button class="quick-card quick-chat" data-navigate="playground">
+                <span class="quick-icon">✳</span>
+                <span class="quick-number">01 / TEST</span>
+                <strong>ایجنت رو امتحان کن</strong>
+                <small>با AURA گفتگو کن و عملکردش رو بسنج.</small>
+                <span class="quick-arrow">↙</span>
+              </button>
+              <button class="quick-card" data-navigate="knowledge">
+                <span class="quick-icon">◇</span>
+                <span class="quick-number">02 / TRAIN</span>
+                <strong>دانش فروشگاه رو کامل کن</strong>
+                <small>قوانین، ارسال و اطلاعات موردنیاز رو ثبت کن.</small>
+                <span class="quick-arrow">↙</span>
+              </button>
+              <button class="quick-card" data-navigate="conversations">
+                <span class="quick-icon">▤</span>
+                <span class="quick-number">03 / REVIEW</span>
+                <strong>مکالمات رو بررسی کن</strong>
+                <small>تاریخچه تعاملات مشتری‌ها رو ببین.</small>
+                <span class="quick-arrow">↙</span>
+              </button>
+            </div>
+          </section>
+
+          <!-- PLAYGROUND -->
+          <section class="view" id="view-playground">
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">
+                  <span class="eyebrow-line"></span> AGENT PLAYGROUND
+                </div>
+                <h1>باهاش حرف بزن<span class="heading-dot">.</span></h1>
+                <p>
+                  درخواست‌های واقعی مشتری رو شبیه‌سازی کن و رفتار ایجنت رو بررسی
+                  کن.
+                </p>
+              </div>
+              <button class="secondary-button" id="newChatButton">
+                ＋ گفتگوی جدید
+              </button>
+            </div>
+
+            <div class="playground-layout">
+              <div class="chat-panel">
+                <div class="chat-header">
+                  <div class="chat-agent">
+                    <div class="chat-agent-avatar">✳</div>
+                    <div>
+                      <strong>AURA Assistant</strong
+                      ><small
+                        ><span class="live-dot"></span> آماده پاسخ‌گویی</small
+                      >
+                    </div>
+                  </div>
+                  <div class="chat-header-meta">
+                    <span>TEST SESSION</span
+                    ><span class="session-indicator">● LIVE</span>
+                  </div>
+                </div>
+
+                <div class="chat-context">
+                  <span>✳</span>
+                  <p>
+                    این یک محیط آزمایشیه. پیام‌ها از API واقعی بک‌اند ارسال و
+                    ذخیره می‌شن.
+                  </p>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                  <div class="welcome-state" id="welcomeState">
+                    <div class="welcome-symbol">✳</div>
+                    <span class="eyebrow">MEET YOUR AGENT</span>
+                    <h2>چی تو ذهنته؟</h2>
+                    <p>
+                      یک سؤال مثل مشتری بپرس. AURA تلاش می‌کنه با استفاده از
+                      اطلاعات فروشگاه جواب بده.
+                    </p>
+                    <div class="suggestion-list">
+                      <button
+                        class="suggestion"
+                        data-prompt="لیست محصولات فروشگاه رو بده"
+                      >
+                        لیست محصولات فروشگاه رو بده <span>↖</span>
+                      </button>
+                      <button
+                        class="suggestion"
+                        data-prompt="شرایط ارسال سفارش چیه؟"
+                      >
+                        شرایط ارسال سفارش چیه؟ <span>↖</span>
+                      </button>
+                      <button
+                        class="suggestion"
+                        data-prompt="کفش نایک موجود دارید؟"
+                      >
+                        کفش نایک موجود دارید؟ <span>↖</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <form class="chat-composer" id="chatForm">
+                  <textarea
+                    id="chatInput"
+                    rows="1"
+                    placeholder="پیامت رو برای AURA بنویس..."
+                    required
+                  ></textarea>
+                  <div class="composer-bottom">
+                    <span
+                      ><kbd>Enter</kbd> برای ارسال · <kbd>Shift + Enter</kbd> خط
+                      جدید</span
+                    >
+                    <button class="send-button" type="submit" id="sendButton">
+                      <span>ارسال پیام</span><b>↗</b>
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <aside class="playground-aside">
+                <div class="aside-card agent-info-card">
+                  <span class="eyebrow">AGENT PROFILE</span>
+                  <div class="profile-orb">✳</div>
+                  <h3>AURA</h3>
+                  <p>AI Customer Support Agent</p>
+                  <div class="profile-status">
+                    <span class="live-dot"></span> فعال و آماده
+                  </div>
+                  <div class="aside-divider"></div>
+                  <div class="info-line">
+                    <span>مدل</span><strong>GPT OSS 20B</strong>
+                  </div>
+                  <div class="info-line">
+                    <span>وضعیت</span
+                    ><strong class="green-text">Operational</strong>
+                  </div>
+                  <div class="info-line">
+                    <span>ابزارها</span><strong>2 متصل</strong>
+                  </div>
+                </div>
+
+                <div class="aside-card">
+                  <span class="eyebrow">AVAILABLE TOOLS</span>
+                  <h3 class="aside-title">ابزارهای ایجنت</h3>
+                  <div class="tool-row">
+                    <span class="tool-symbol">⌕</span>
+                    <div>
+                      <strong>Search Products</strong
+                      ><small>جست‌وجوی کاتالوگ</small>
+                    </div>
+                    <span class="tool-check">✓</span>
+                  </div>
+                  <div class="tool-row">
+                    <span class="tool-symbol purple-bg">◇</span>
+                    <div>
+                      <strong>Search Knowledge</strong
+                      ><small>بازیابی اطلاعات فروشگاه</small>
+                    </div>
+                    <span class="tool-check">✓</span>
+                  </div>
+                </div>
+
+                <div class="aside-tip">
+                  <span>✦</span>
+                  <div>
+                    <strong>نکته برای تست</strong>
+                    <p>
+                      سؤال‌های چندمرحله‌ای بپرس تا حافظه مکالمه و بازیابی
+                      اطلاعات رو بررسی کنی.
+                    </p>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <!-- CONVERSATIONS -->
+          <section class="view" id="view-conversations">
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">
+                  <span class="eyebrow-line"></span> CONVERSATION LOGS
+                </div>
+                <h1>صدای مشتری‌ها<span class="heading-dot">.</span></h1>
+                <p>مکالمات ذخیره‌شده و تاریخچه تعاملات با AURA.</p>
+              </div>
+              <button class="secondary-button" data-navigate="playground">
+                ＋ گفتگوی آزمایشی
+              </button>
+            </div>
+            <div class="content-panel">
+              <div class="panel-toolbar">
+                <div>
+                  <strong>تاریخچه مکالمات</strong
+                  ><small id="conversationCount">در حال دریافت...</small>
+                </div>
+                <button class="small-refresh" data-refresh="conversations">
+                  ↻ تازه‌سازی
+                </button>
+              </div>
+              <div id="conversationList" class="conversation-list">
+                <div class="loading-state">در حال دریافت مکالمات...</div>
+              </div>
+            </div>
+            <div
+              class="content-panel conversation-detail"
+              id="conversationDetail"
+            >
+              <div class="empty-detail">
+                <span>▤</span><strong>یک مکالمه رو انتخاب کن</strong>
+                <p>برای مشاهده پیام‌ها، یکی از مکالمات بالا رو انتخاب کن.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- KNOWLEDGE -->
+          <section class="view" id="view-knowledge">
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">
+                  <span class="eyebrow-line"></span> KNOWLEDGE SYSTEM
+                </div>
+                <h1>حافظه‌ی AURA<span class="heading-dot">.</span></h1>
+                <p>
+                  اطلاعاتی که ایجنت برای پاسخ‌های دقیق‌تر ازشون استفاده می‌کنه.
+                </p>
+              </div>
+              <button class="primary-button" id="addKnowledgeButton">
+                ＋ افزودن دانش
+              </button>
+            </div>
+            <div class="knowledge-intro">
+              <div class="knowledge-intro-icon">◇</div>
+              <div>
+                <strong>دانش فروشگاه، منبع حقیقت AURA است.</strong>
+                <p>
+                  اطلاعات ارسال، بازگشت کالا، پرداخت و سیاست‌های فروشگاه رو
+                  اینجا مدیریت کن.
+                </p>
+              </div>
+              <span class="knowledge-intro-tag">RETRIEVAL SOURCE</span>
+            </div>
+            <div class="content-panel">
+              <div class="panel-toolbar">
+                <div>
+                  <strong>محتوای ثبت‌شده</strong
+                  ><small id="knowledgeCount">در حال دریافت...</small>
+                </div>
+                <input
+                  class="search-input"
+                  id="knowledgeSearch"
+                  placeholder="جست‌وجو در دانش..."
+                />
+              </div>
+              <div id="knowledgeList" class="knowledge-grid">
+                <div class="loading-state">در حال دریافت اطلاعات...</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- PRODUCTS -->
+          <section class="view" id="view-products">
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">
+                  <span class="eyebrow-line"></span> STORE CATALOG
+                </div>
+                <h1>کاتالوگ محصولات<span class="heading-dot">.</span></h1>
+                <p>
+                  محصولاتی که AURA برای پاسخ به سؤالات مشتری‌ها جست‌وجو می‌کنه.
+                </p>
+              </div>
+              <button class="primary-button" id="addProductButton">
+                ＋ افزودن محصول
+              </button>
+            </div>
+            <div class="content-panel">
+              <div class="panel-toolbar">
+                <div>
+                  <strong>محصولات فروشگاه</strong
+                  ><small id="productCount">در حال دریافت...</small>
+                </div>
+                <input
+                  class="search-input"
+                  id="productSearch"
+                  placeholder="نام یا SKU محصول..."
+                />
+              </div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>محصول</th>
+                      <th>کد SKU</th>
+                      <th>قیمت</th>
+                      <th>موجودی</th>
+                      <th>وضعیت</th>
+                      <th>عملیات</th>
+                    </tr>
+                  </thead>
+                  <tbody id="productTable">
+                    <tr>
+                      <td colspan="6" class="loading-state">
+                        در حال دریافت محصولات...
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="app-footer">
+          <span>AURA AGENT STUDIO</span
+          ><span>Built for intelligent conversations <b>✳</b></span>
+        </footer>
+      </main>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal" id="modal">
+        <div class="modal-head">
+          <div>
+            <span class="eyebrow" id="modalEyebrow">NEW ENTRY</span>
+            <h2 id="modalTitle">افزودن اطلاعات</h2>
+          </div>
+          <button class="modal-close" id="modalClose">×</button>
+        </div>
+        <form id="modalForm">
+          <div id="modalFields"></div>
+          <div class="modal-actions">
+            <button type="button" class="secondary-button" id="modalCancel">
+              انصراف</button
+            ><button type="submit" class="primary-button" id="modalSubmit">
+              ذخیره اطلاعات ↗
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
