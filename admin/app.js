@@ -14,6 +14,7 @@ const state = {
   busy: false,
 };
 
+
 const faNumber = (value) =>
   new Intl.NumberFormat("fa-IR").format(Number(value || 0));
 
